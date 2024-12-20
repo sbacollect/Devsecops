@@ -8,6 +8,8 @@
     <form method="post" action="/search">
         <label for="search">Search:</label>
         <input type="text" id="search" name="search">
+        <input type="text" id="search" name="search" oninput="this.value =
+this.value.replace(/[';--]/g, '')">
         <button type="submit">Submit</button>
     </form>
     <!-- This form is vulnerable to SQL injection because user input is not escaped -->
