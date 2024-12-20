@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test SQL Injection</title>
+</head>
+<body>
+    <h1>Welcome to test-gema.local</h1>
+    <form method="post" action="/search">
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="search">
+        <button type="submit">Submit</button>
+    </form>
+    <!-- This form is vulnerable to SQL injection because user input is not escaped -->
+</body>
+</html>
